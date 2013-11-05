@@ -3,7 +3,7 @@
 /*
 __PocketMine Plugin__
 name=TreeControl
-description=Take control of Saplings
+description=Simple to Advanced Tree Control
 version=0.1
 author=Jemrada
 class=TreeControl
