@@ -20,7 +20,7 @@ class TreeControl implements Plugin{
    public function init(){
      $this->api->console->register("SaplingMature", "Command for growing a tree", array(
             $this,
-            "SaplingGrow"
+            "SaplingMature"
    }
    
    public function __destruct(){
