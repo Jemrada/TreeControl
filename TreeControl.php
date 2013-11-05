@@ -18,7 +18,7 @@ class TreeControl implements Plugin{
    }
    
    public function init(){
-     $this->api->console->register("SaplingMature", "Command for growing a tree", array(
+     $this->api->console->register("SaplingMature", "Command for growing a tree", array($this, "command"))
             $this,
             "SaplingMature"
    }
