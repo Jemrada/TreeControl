@@ -21,7 +21,7 @@ apiversion=10
 		$this->api->addHandler("playerBlockBreak", array($this, "playerBlockBreak"), 1);
 	}
 	
-	public function hdlAfterBreakingBlock($data, $event){
+	public function playerBlockBreak($data, $event){
 		if(!($data["player"] instanceof Player)){return(true);}
 		if(($data["player"]->gamemode & 0x01) != 0x00){return(true);}
 		if($data["target"]->getID() == 17){
