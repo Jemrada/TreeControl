@@ -18,7 +18,7 @@ apiversion=10
 	}
 	
 	public function init(){
-		$this->api->addHandler("player.block.afterbreak", array($this, "hdlAfterBreakingBlock"), 1);
+		$this->api->addHandler("playerBlockBreak", array($this, "playerBlockBreak"), 1);
 	}
 	
 	public function hdlAfterBreakingBlock($data, $event){
